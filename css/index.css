@@ -4,3 +4,10 @@ h1{
 p{
     color: blue;
 }
+button{
+    color: brown;
+    background-color: aqua;
+}
+body{
+    background-color: black;
+}
