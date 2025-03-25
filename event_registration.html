@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insignia Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            background-color: #e9f7fe;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            margin-bottom: 20px;
+        }
+        .link-button {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .link-button a {
+            text-decoration: none;
+            color: white;
+            background-color: #28a745;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .link-button a:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insignia Event Registration</h1>
+        <div class="info">
+            <p><strong>Event Details:</strong></p>
+            <p>Date: March 30, 2025</p>
+            <p>Time: 10:00 AM - 5:00 PM</p>
+            <p>Venue: College Auditorium</p>
+        </div>
+        <form action="submit_registration.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="usn">USN:</label>
+            <input type="text" id="usn" name="usn" placeholder="Enter your USN" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" placeholder="Enter your address"></textarea>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="event">Event Type:</label>
+            <select id="event" name="event" required>
+                <option value="">--Select an Event--</option>
+                <option value="coding">Coding Competition</option>
+                <option value="quiz">Quiz</option>
+                <option value="debate">Debate</option>
+                <option value="cultural">Cultural Events</option>
+            </select>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <div class="link-button">
+            <a href="https://www.collegewebsite.com" target="_blank">Visit College Website</a>
+        </div>
+    </div>
+</body>
+</html>
